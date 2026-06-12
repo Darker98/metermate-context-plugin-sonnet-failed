@@ -1,0 +1,110 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.app-logo {
+  font-size: 1.4rem;
+}
+
+.app-brand h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.app-tagline {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  border-left: 1px solid var(--color-border);
+  padding-left: 0.5rem;
+  margin-left: 0.25rem;
+}
+
+.role-switch {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 3px;
+}
+
+.role-btn {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: calc(var(--radius) - 2px);
+  background: transparent;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.role-btn:hover {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+.role-btn.active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.view-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.setup-banner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.setup-banner h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.setup-banner p {
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.setup-note {
+  font-size: 0.875rem;
+  color: var(--color-primary) !important;
+  font-style: italic;
+}
