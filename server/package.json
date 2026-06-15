@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ../node_modules/.bin/tsx watch src/index.ts",
+    "dev": "npx tsx watch src/index.ts",
     "build": "tsc",
     "test": "jest --forceExit",
     "seed": "npx tsx --env-file=../.env src/seed.ts"

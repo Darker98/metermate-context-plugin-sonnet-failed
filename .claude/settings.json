@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "acp-maxio-advanced-billing-ts",
+    "acp-slack-web-api-ts"
+  ]
+}
