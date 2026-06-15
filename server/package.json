@@ -6,7 +6,7 @@
     "dev": "node ../node_modules/.bin/tsx watch src/index.ts",
     "build": "tsc",
     "test": "jest --forceExit",
-    "seed": "node ../node_modules/.bin/tsx src/seed.ts"
+    "seed": "npx tsx --env-file=../.env src/seed.ts"
   },
   "dependencies": {
     "@maxio-com/advanced-billing-sdk": "9.0.0",
